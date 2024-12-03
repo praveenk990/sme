@@ -68,10 +68,19 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "scroll-horizontal": "scrollHorizontally 20s linear infinite",
         scroll:
           "scroll var(--animation-duration, 10s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
+        scrollHorizontally: {
+          "0%": {
+            transform: "translateX(100%)", // Start from the right
+          },
+          "100%": {
+            transform: "translateX(-100%)", // End at the left
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
