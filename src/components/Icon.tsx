@@ -69,6 +69,31 @@ const Icon = () => {
             height={50}
             alt="image9"
           />
+
+<img
+            className="mb-4 sm:w-16 md:w-24 lg:w-32 w-24"
+            src="/kk.png"
+            width={150}
+            height={50}
+            alt="image10"
+          />
+
+<img
+            className="mb-4 sm:w-16 md:w-24 lg:w-32 w-24"
+            src="/weir.webp"
+            width={150}
+            height={50}
+            alt="image11"
+          />
+
+<img
+            className="mb-4 sm:w-16 md:w-24 lg:w-32 w-24"
+            src="/OIP.jpg"
+            width={150}
+            height={50}
+            alt="image12"
+          />
+
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
+  { href: "/Images", key: "img", label: "Image" },
   { href: "/projects", key: "projects", label: "Projects" },
   { href: "/contact", key: "contact_us", label: "Contact US" },
 ];
@@ -9,22 +10,22 @@ export const NAV_LINKS = [
 // about us
 export const OUR_EXPERTISE = [
   {
-    title: "Electrical Contracting:",
+    title: "Electrical Contracting",
     icon: "pexels-sora-shimazaki-5668859.jpg",
     description:
-      "We are authorized by the Chief Electrical Inspectorate of the Government of Karnataka to undertake all kinds of electrical licensing, contract works, and testing.",
+      "We are premier Class I Electrical Contractor, sanctioned by the Chief Electrical Inspectorate of Karnataka. We are renowned for our expertise in electrical licensing, contract works, comprehensive testing, and both pre-commissioning and commissioning services",
   },
   {
-    title: "Establishment and Installation:",
+    title: "Electrical Installations and Establishment",
     icon: "Screenshot 2024-04-20 200857.png",
     description:
-      "Our expertise spans electrical installations, sub-stations, and transmission lines (EHT, HT, and LT).",
+      "Our professionals' expertise spans electrical installations, including distribution panel erection, industrial electrical works, industrial equipment installation, substation setup, and transmission lines (EHT, HT, and LT).",
   },
   {
-    title: "Testing and Calibration:",
+    title: "Re-Generative Type Automation test bed solution",
     icon: "pexels-emmages-7861955.jpg",
     description:
-      "Rigorous testing and precise calibration ensure optimal performance.",
+      "A regenerative type automation test bed solution is a sophisticated system designed to test and validate the performance of electrical machines, engines, or transmissions. These test beds are highly efficient as they capture and reuse energy during the testing process, significantly reducing energy consumption and costs. They are equipped with advanced automation platforms, control software, and precise measuring devices to simulate real-world conditions and ensure accurate testing results",
   },
   {
     title: "Engineering Support: ",

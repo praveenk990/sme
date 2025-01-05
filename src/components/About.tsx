@@ -5,13 +5,15 @@ import { BackgroundGradient } from "./ui/background-gradient";
 const About = () => {
   return (
     <div className="p-12">
+      <div>
       <h2 className="text-center text-4xl leading-8 font-extrabold sm:text-5xl">
-        Our Expertise
+      Our Proficiency
       </h2>
-      <div className="mt-10">
+      </div>
+      <div className="mt-10 text-right">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {OUR_EXPERTISE.map((OUR_EXPERTISE) => (
-            <OurItem
+            <OurItem 
               key={OUR_EXPERTISE.title}
               title={OUR_EXPERTISE.title}
               icon={OUR_EXPERTISE.icon}
@@ -39,7 +41,7 @@ const OurItem: React.FC<OurItemProps> = ({ title, icon, description }) => {
             {title}
           </h3>
           <img src={icon} alt="ele" className="rounded mt-2" />
-          <p className="mt-3 text-mb text-neutral-600 flex-grow">
+          <p className="mt-3 text-mb text-justify text-neutral-600 flex-grow">
             {description}
           </p>
         </div>
