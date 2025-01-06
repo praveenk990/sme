@@ -13,8 +13,8 @@ export function Pagea() {
       </h1>
       <div className="p-10 ">
       <p className=" text-3xl text-justify mt-2 text-neutral-300 relative z-20">
-      With over 26 years of industry experience, 
-<span className="font-bold  ">SREE MANJUNATHA ELECTRICALS </span>is a premier Class I Electrical Contractor, sanctioned by the Chief Electrical Inspectorate of Karnataka. We are renowned for our expertise in electrical licensing, contract works, comprehensive testing, and both pre-commissioning and commissioning services. Our commitment to excellence is reflected in every project we undertake
+      With over 26 years of industry experience,  
+<span className="font-bold  "> SREE MANJUNATHA ELECTRICALS </span>is a premier Class I Electrical Contractor, sanctioned by the Chief Electrical Inspectorate of Karnataka. We are renowned for our expertise in electrical licensing, contract works, comprehensive testing, and both pre-commissioning and commissioning services. Our commitment to excellence is reflected in every project we undertake
 
       </p>
       </div>

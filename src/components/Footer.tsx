@@ -6,7 +6,7 @@ const Footer = () => {
           <h2 className="text-white text-lg font-semibold mb-4">
             Sree Manjunatha Electricals
           </h2>
-          <p>
+          <p className="text-justify">
             We take pride in introducing ourselves as a Class 1 Electrical
             Contractor with eleven years of experience. Authorized by the Chief
             Electrical Inspectorate of the Government of Karnataka, we
@@ -87,10 +87,24 @@ const Footer = () => {
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">Contact Us</h2>
           <p>
-            No. 161, 7th Main Road, 3rd Block,4th Stage,Basaveshwar
+            No. 313, 5th Main Road, 2rd Block,3th Stage,Basaveshwar
             Nagar,Bangalore- 560079.
           </p>
-          <p>Ph. : 23149271,</p>
+          <a
+  href="mailto:sreemanjunathaelectricals@smeglobal.in"
+  className="hover:text-white transition-colors duration-300"
+>
+  sreemanjunathaelectricals@smeglobal.in
+</a>
+<p>
+<a
+  href="mailto:sales@smeglobal.in"
+  className="hover:text-white transition-colors duration-300"
+>
+sales@smeglobal.in
+</a>
+</p>
+          
           <p> Mob. : 9886894462, 9341973677</p>
         </div>
       </div>

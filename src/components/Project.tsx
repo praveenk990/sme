@@ -1,65 +1,144 @@
-import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
+import React from "react";
+import { StickyScroll } from "./ui/sticky-scroll-reveal";  // Assuming StickyScroll is correctly imported
+import Image from "next/image";
 
-// Define the type for the testimonial data
-interface Testimonial {
-  quote: string;
-  name: string;
-  designation: string;
-  src: string;
+// Define the Project type for clarity
+interface ProjectType {
+  title: string;
+  description: string;
+  content: React.JSX.Element;
 }
 
-export function AnimatedTestimonialsDemo() {
-  const testimonials: Testimonial[] = [
-    {
-      quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-  ];
-
-  return (
-    <div className="w-full">
-      <h2 className="mb-2 text-center text-3xl font-extrabold sm:text-4xl lg:text-5xl">
-        Our Clients
-      </h2>
-      <div className="overflow-x-hidden">
-        <div className="flex space-x-3 sm:space-x-5 animate-scroll-horizontal m-4 sm:m-8 lg:m-16">
-          {/* Pass the testimonials prop to AnimatedTestimonials */}
-          <AnimatedTestimonials testimonials={testimonials} autoplay={true} />
-        </div>
+// Define the `projects` array with proper types
+const projects: ProjectType[] = [
+  // {
+  //   title: "Collaborative Editing",
+  //   description:
+  //     "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+  //   content: (
+  //     <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+  //       Collaborative Editing
+  //     </div>
+  //   ),
+  // },
+  {
+    title: "ABB Automation test bed solution",
+    description:
+      "Three phase to single phase 1kV, 500kVA source for Traction AUX converter testing, with safety interlock.3kV, 500KW DC source for Traction CC1500 product, testing setup with Safety interlock.",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/prj4.png"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
       </div>
+    ),
+  },
+
+  {
+    title: "FIMER Automation test bed solution",
+    description:
+      "5MW, Solar central Inverter testing setup with safety interlock.2MW, Solar central Inverter testing setup with safety interlock",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/prj2.png"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "TRSL Automation test bed solution",
+    description:
+      "3kV, 500KW DC source for EMU & MEMU product testing setup with Safety interlock4.5kV 300KW DC source for LAZIO product testing setup with Safety interlock",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/prj3.png"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
+      </div>
+    ),
+  },
+
+  {
+    title: "ABB, FIMER, SINENG, HEALTHIUM, WEIR MINERALS and HITACHI Electrical Installations and Establishment",
+    description:
+      "Complete electrification solution for Factory operations",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/prj1.png"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
+      </div>
+    ),
+  },
+
+  {
+    title: "",
+    description:
+      "",
+    content: (
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/prj1.png"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
+      </div>
+    ),
+  },
+
+  // {
+  //   title: "Version control",
+  //   description:
+  //     "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+  //   content: (
+  //     <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+  //       Version control
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   title: "Running out of content",
+  //   description:
+  //     "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+  //   content: (
+  //     <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+  //       Running out of content
+  //     </div>
+  //   ),
+  // },
+];
+
+export function StickyScrollRevealDemo() {
+  return (
+    <section id="projects-section" className="projects">
+    <div className="p-10">
+      <h2 className="p-6 mb-2 text-center text-3xl font-extrabold sm:text-4xl lg:text-5xl">
+        Project
+      </h2>
+      {/* Pass `projects` to the StickyScroll component */}
+      <StickyScroll content={projects} />
     </div>
+    </section>
   );
 }
 
-export default AnimatedTestimonialsDemo;
+export default StickyScrollRevealDemo;

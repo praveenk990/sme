@@ -1,8 +1,8 @@
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
   { href: "/Images", key: "img", label: "Image" },
-  { href: "/projects", key: "projects", label: "Projects" },
-  { href: "/contact", key: "contact_us", label: "Contact US" },
+  { href: "#projects-section", key: "projects", label: "Projects" }, // Same-page link with hash
+  { href: "/contact", key: "contact", label: "Contact US" },
 ];
 
 // <img src="/en_data/images/common/header-logo.svg" title="株式会社タツノ" alt="株式会社タツノ">

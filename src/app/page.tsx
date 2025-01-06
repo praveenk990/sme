@@ -6,6 +6,8 @@ import Clients from "@/components/clients";
 import Pagea from "@/components/Pagea";
 import Page from "@/components/Page";
 import React from "react";
+import Project from "@/components/Project";
+
 
 
 const Home = () => {
@@ -14,7 +16,7 @@ const Home = () => {
       <Page />
       <Pagea/>
       <About />
-      
+     <Project />
       <Whyus />
       {/* <Clients /> */}
       <Icon />
