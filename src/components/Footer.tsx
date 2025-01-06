@@ -7,12 +7,7 @@ const Footer = () => {
             Sree Manjunatha Electricals
           </h2>
           <p className="text-justify">
-            We take pride in introducing ourselves as a Class 1 Electrical
-            Contractor with eleven years of experience. Authorized by the Chief
-            Electrical Inspectorate of the Government of Karnataka, we
-            specialize in a wide range of electrical services, including
-            licensing, contract works, testing, calibration, and
-            pre-commissioning and commissioning activities.
+          Govt.Class I Electrical Contractor, Consultant Engineer & Electors.
           </p>
         </div>
         <div>
