@@ -4,7 +4,7 @@ import { SparklesCore } from "./ui/sparkles";
 
 export function Page() {
   return (
-    <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden ">
+    <div className="h-[50rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden ">
       <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-red-800 to-purple-500 relative z-20">
         SREE MANJUNATHA ELECTRICALS
       </h1>

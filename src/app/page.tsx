@@ -7,6 +7,8 @@ import Pagea from "@/components/Pagea";
 import Page from "@/components/Page";
 import React from "react";
 import Project from "@/components/Project";
+import Stats from "@/components/Stats";
+
 
 
 
@@ -16,7 +18,9 @@ const Home = () => {
       <Page />
       <Pagea/>
       <About />
+      
      <Project />
+     <Stats/>
       <Whyus />
       {/* <Clients /> */}
       <Icon />
