@@ -7,19 +7,20 @@ import Page from "@/components/Page";
 import React from "react";
 import Project from "@/components/Project";
 import Stats from "@/components/Stats";
-
-
-
+import { WavyBackgroundDemo } from "@/components/wave";
+import { AnimatedTestimonialsDemo } from "@/components/emp";
 
 const Home = () => {
   return (
     <>
-      <Page />
-      <Pagea/>
+      <WavyBackgroundDemo />
+
+      <Pagea />
       <About />
-      
-     <Project />
-     <Stats/>
+
+      <Project />
+      <Stats />
+      <AnimatedTestimonialsDemo />
       <Whyus />
       {/* <Clients /> */}
       <Icon />

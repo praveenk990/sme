@@ -1,7 +1,7 @@
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
   { href: "/Images", key: "img", label: "Gallery" },
-  { href: "#projects-section", key: "projects", label: "Projects" }, // Same-page link with hash
+  { href: "/#projects-section", key: "projects", label: "Projects" }, // Same-page link with hash
   { href: "/contact", key: "contact", label: "Contact US" },
 ];
 

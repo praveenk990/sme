@@ -1,51 +1,28 @@
 "use client";
-import { ParallaxScrollSecond } from "./ui/parallax-scroll-2";
-import { useEffect, useState } from "react";
+import React from "react";
 
-const ImagesPage = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // Check if the screen width is less than 768px (mobile view)
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    // Initial check
-    handleResize();
-
-    // Add event listener for resize
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup event listener
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+const ImagesPage: React.FC = () => {
   return (
-    <div className="h-[40rem] w-full bg-gray-500 bg-grid-white/[0.2] relative flex items-center justify-center">
-      {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center "></div>
-
-      {/* Render all images with a smaller size and scrollable vertically on mobile, else use parallax scroll */}
-      {isMobile ? (
-        <div className="overflow-y-auto flex flex-col pt-20 pb-8 space-y-4 h-full w-full px-4">
-          {images.map((image, index) => (
+    <div className="h-auto w-full bg-white pt-24 p-4 md:p-15 flex items-center justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-6xl auto-rows-[150px] sm:auto-rows-[200px] md:auto-rows-[250px]">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className="relative overflow-hidden rounded-2xl shadow-md flex items-center justify-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+          >
             <img
-              key={index}
               src={image}
               alt={`Image ${index}`}
-              className="h-[200px] w-auto object-cover rounded-2xl"
+              className="w-full h-full object-cover rounded-2xl opacity-90 hover:opacity-100 transition-opacity duration-300"
             />
-          ))}
-        </div>
-      ) : (
-        <ParallaxScrollSecond images={images} />
-      )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
-const images = [
+const images: string[] = [
   "/img1.jpeg",
   "/img2.jpeg",
   "/img3.jpeg",

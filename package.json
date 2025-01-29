@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
-    "@tabler/icons-react": "^3.26.0",
+    "@tabler/icons-react": "^3.29.0",
     "@tsparticles/engine": "^3.7.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.7.1",
@@ -19,10 +19,12 @@
     "framer-motion": "^11.16.0",
     "lucide-react": "^0.370.0",
     "mini-svg-data-uri": "^1.4.4",
+    "motion": "^12.0.6",
     "next": "^14.2.1",
     "react": "^18",
     "react-countup": "^6.5.3",
     "react-dom": "^18",
+    "simplex-noise": "^4.0.3",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7"
   },

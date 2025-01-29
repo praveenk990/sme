@@ -1,9 +1,9 @@
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
-    <div className="p-20">
-      <div>
+    <div className="h-screen w-full flex items-center justify-center bg-gray-100 p-8">
+      <div className="max-w-4xl w-full bg-white shadow-lg rounded-lg p-10">
         <h2 className="text-center lg:text-4xl leading-8 font-extrabold sm:text-5xl">
           Contact Us
         </h2>
@@ -11,23 +11,20 @@ const page = () => {
           SREE MANJUNATHA ELECTRICALS
         </h1>
         <p className="text-center text-gray-500">
-          Govt.Class I Electrical Contractor, Consultant Engineer & Electors.{" "}
+          Govt.Class I Electrical Contractor, Consultant Engineer & Electors.
         </p>
         <p className="text-center font-bold">
-          No. 313, 5th Main Road, 2rd Block,3th Stage,Basaveshwar
-          Nagar,Bangalore- 560079.
+          No. 313, 5th Main Road, 2rd Block, 3rd Stage, Basaveshwar Nagar,
+          Bangalore- 560079.
         </p>
-
         <p className="text-center">
-          UDYAM Reg NO. :
+          UDYAM Reg NO.:{" "}
           <span className="font-bold">UDYAM-KR-03-0111275(Micro)</span>
         </p>
-        <p className="text-center">
-          <span className="font-bold">GSTIN/UIN: 29AEKPC8386D1Z8</span>{" "}
-        </p>
-        <p className="text-center"> State Name: Karnataka,code: 29 </p>
+        <p className="text-center font-bold">GSTIN/UIN: 29AEKPC8386D1Z8</p>
+        <p className="text-center">State Name: Karnataka, Code: 29</p>
 
-        <div className="text-center flex flex-col items-center font-bold ">
+        <div className="text-center flex flex-col items-center font-bold space-y-4 mt-6">
           <div className="flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +47,6 @@ const page = () => {
               sreemanjunathaelectricals@smeglobal.in
             </a>
           </div>
-
           <div className="flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,23 +70,9 @@ const page = () => {
             </a>
           </div>
         </div>
-
-        <div className="mt-1">
-          <p className="text-center flex items-center justify-center gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-6 h-6 text-gray-700"
-            >
-              <path d="M10.5 18.75a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" />
-              <path
-                fillRule="evenodd"
-                d="M8.625.75A3.375 3.375 0 0 0 5.25 4.125v15.75a3.375 3.375 0 0 0 3.375 3.375h6.75a3.375 3.375 0 0 0 3.375-3.375V4.125A3.375 3.375 0 0 0 15.375.75h-6.75ZM7.5 4.125C7.5 3.504 8.004 3 8.625 3H9.75v.375c0 .621.504 1.125 1.125 1.125h2.25c.621 0 1.125-.504 1.125-1.125V3h1.125c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-6.75A1.125 1.125 0 0 1 7.5 19.875V4.125Z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <span className="font-bold">Mob.: 9886894462, 9341973677</span>
+        <div className="mt-6 text-center">
+          <p className="flex items-center justify-center gap-2 font-bold">
+            <span>Mob.: 9886894462, 9341973677</span>
           </p>
         </div>
       </div>
@@ -98,4 +80,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
