@@ -14,7 +14,6 @@ const Home = () => {
   return (
     <>
       <WavyBackgroundDemo />
-
       <Pagea />
       <About />
 

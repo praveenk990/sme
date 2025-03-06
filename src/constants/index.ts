@@ -5,8 +5,6 @@ export const NAV_LINKS = [
   { href: "/contact", key: "contact", label: "Contact US" },
 ];
 
-// <img src="/en_data/images/common/header-logo.svg" title="株式会社タツノ" alt="株式会社タツノ">
-
 // about us
 export const OUR_EXPERTISE = [
   {

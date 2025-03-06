@@ -6,14 +6,14 @@ const About = () => {
   return (
     <div className="p-12">
       <div>
-      <h2 className="text-center text-4xl leading-8 font-extrabold sm:text-5xl">
-      Our Proficiency
-      </h2>
+        <h2 className="text-center text-4xl leading-8 font-extrabold sm:text-5xl">
+          Our Proficiency
+        </h2>
       </div>
       <div className="mt-10 text-right">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {OUR_EXPERTISE.map((OUR_EXPERTISE) => (
-            <OurItem 
+            <OurItem
               key={OUR_EXPERTISE.title}
               title={OUR_EXPERTISE.title}
               icon={OUR_EXPERTISE.icon}
@@ -34,7 +34,7 @@ type OurItemProps = {
 
 const OurItem: React.FC<OurItemProps> = ({ title, icon, description }) => {
   return (
-    <div className="flex justify-center">
+    <div className="w-full h-screen flex justify-center">
       <BackgroundGradient className="flex flex-col rounded-[22px] bg-white overflow-hidden h-full max-w-sm">
         <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
           <h3 className="text-lg sm:text-xl text-black font-extrabold ">
