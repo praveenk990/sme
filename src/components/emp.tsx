@@ -4,39 +4,67 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "/emp1.png",
+        "Our commitment to innovation and excellence drives everything we do. We don't just deliver solutions, we create lasting impact for our clients and partners",
+      name: "Ravi prakash MN",
+      designation: "Managing director",
+      src: "/01emp.jpeg",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "/emp2.png",
+        "Safety isn't just a protocol — it's a culture we live by. Our top priority is ensuring every team member returns home safe, every single day.",
+      name: "Yaswanth kulal",
+      designation: "safety Incharge",
+      src: "/02emp.jpeg",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "/emp3.png",
+        "Engineering solutions that are efficient, reliable, and innovative is what drives our success. Every project is an opportunity to push the boundaries of technology.",
+      name: "Chethan BS",
+      designation: "Electrical Engineer",
+      src: "/03emp.jpeg",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "/emp4.png",
+        "Precision, reliability, and innovation are at the core of every system we design. Our goal is to power progress through smart and sustainable engineering.",
+      name: "Amal AS",
+      designation: "Safety officer",
+      src: "/04emp.jpeg",
     },
     {
       quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "/emp5.png",
+        "Successful projects don’t happen by chance — they’re built on clear vision, strong collaboration, and disciplined execution. We turn plans into results.",
+      name: "Pandurangan",
+      designation: "Project Manager",
+      src: "/05emp.jpeg",
     },
+    {
+      quote:
+        "With over 15 years in the field, I've learned that quality, safety, and attention to detail make all the difference. Every connection we make powers trust and reliability.",
+      name: "Santhosh MN",
+      designation: "Senior electricians 15 year  of experience",
+      src: "/06emp.jpeg",
+    },
+    {
+      quote:
+        "Sixteen years on the job have taught me that expertise and a commitment to safety are the keys to delivering lasting electrical solutions our clients can depend on.",
+      name: "Yaswantha MN",
+      designation: "Senior electricians 16 year experience",
+      src: "/07emp.jpeg",
+    },  {
+      quote:
+        "Experience has shown me that meticulous workmanship and a proactive approach to safety ensure every project runs smoothly and stands the test of time.",
+      name: "Dharshan M",
+      designation: "Senior electricians 15 year experience in our organization",
+      src: "/08emp.jpeg",
+    },
+    {
+      quote:
+       "Effective supervision is about guiding teams with clarity and support to achieve goals efficiently while maintaining high standards of quality and safety.",
+      name: "Shivashankar",
+      designation: "Supervisor",
+      src: "/09emp.jpeg",
+    },
+
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;
 }
